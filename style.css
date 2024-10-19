@@ -1,0 +1,112 @@
+:root {
+    --body: rgb(146, 48, 238);
+    --bodyShadow: rgb(112, 35, 201);
+    --face: rgb(182, 222, 255);
+    --faceShadow: rgb(126, 157, 183);
+    --white: rgb(255, 255, 255);
+    --shadow: hsl(271, 53%, 82%);
+}
+
+html {
+    background-color: azure;
+}
+
+body {
+    width: 375px;
+    height: 475px;
+    background-color: var(--bodyShadow);
+    margin: 150px auto ;
+    border: 25px solid black;
+    border-radius: 225px 225px 0 0;
+    position: relative;
+}
+
+.legs  {
+    position: absolute;
+    top: 475px;
+    justify-content: space-between;
+}
+
+.leg1 {
+    border: 25px solid black;
+    border-radius: 0 0 75px 75px;
+    background-color: var(--bodyShadow);
+    width: 135px;
+    height: 125px;
+    border-top: none;
+position: absolute;
+left: -25px;
+}
+
+.leg2 {
+    border: 25px solid black;
+    border-radius: 0 0 75px 75px;
+    background-color: var(--bodyShadow);
+    width: 135px;
+    height: 140px;
+    border-top: none;
+    position: absolute;
+    right: -400px
+}
+
+.light {
+    width: 375px;
+    height: 425px;
+    background-color: var(--body);
+    position: absolute;
+    border-radius: 275px 275px 300px 100px;
+}
+
+.face {
+    position: absolute;
+    width: 275px;
+    height: 150px;
+    background-color: var(--faceShadow);
+    border-radius: 100px;
+    border: 25px solid black;
+    top: 100px;
+    left: -50px;
+    z-index: 1;
+}
+
+.light2 {
+    position: absolute;
+    width: 250px;
+    height: 125px;
+    background-color: var(--face);
+    border-radius: 100px;
+}
+
+.shine {
+    position: absolute;
+    z-index: 2;
+    width: 125px;
+    height: 50px;
+    background-color: var(--white);
+    border-radius: 100px;
+    top: 25px;
+    left: 25px;
+}
+
+.back {    
+    border: 25px solid black;
+    border-radius: 75px 100px;
+    background-color: var(--bodyShadow);
+    width: 150px;
+    height: 275px;
+    position: absolute;
+    top: 150px;
+    right: -125px;
+    z-index: -1;
+}
+
+.shadow {
+    background-color: var(--shadow);
+    width: 525px;
+    height: 150px;
+    position: absolute;
+    top: 525px;
+    left: -50px;
+    border-radius: 50%;
+    z-index: -1;
+}
